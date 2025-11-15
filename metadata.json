@@ -1,0 +1,5 @@
+{
+  "name": "AI Image Fusion",
+  "description": "An application that generates a new image by fusing a subject from one photo with the style and context of a reference photo, powered by the Gemini API.",
+  "requestFramePermissions": []
+}
