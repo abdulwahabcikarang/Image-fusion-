@@ -1,10 +1,8 @@
 import { GoogleGenAI, Type, Modality } from "@google/genai";
 
-if (!process.env.API_KEY) {
-    throw new Error("API_KEY environment variable not set");
-}
-
+// Fix: Per coding guidelines, initialize GoogleGenAI with process.env.API_KEY.
 const ai = new GoogleGenAI({ apiKey: process.env.API_KEY });
+
 
 /**
  * Analyzes a reference image and generates a detailed JSON prompt for its style.
